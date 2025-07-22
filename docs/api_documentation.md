@@ -107,7 +107,7 @@ package usecases
 package repositories
 ```
 
-## 6. Dependency Initialization Flow
+## Dependency Initialization Flow
 
 ```mermaid
 sequenceDiagram
