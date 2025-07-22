@@ -10,9 +10,9 @@ import (
 // task usecase
 type TaskUseCase interface {
 	CreateTask(task *domain.Task) (*domain.Task, error)                     // create new task with validation
-	DeleteTask(taskID string) error                 					    // delete existing task or return error if not found
-	GetAllTasks() ([]domain.Task, error)         					        // get all tasks in the system
-	GetTaskByID(taskID string) (*domain.Task, error) 					    // get specific task by id or return error if not found
+	DeleteTask(taskID string) error                 			// delete existing task or return error if not found
+	GetAllTasks() ([]domain.Task, error)         				// get all tasks in the system
+	GetTaskByID(taskID string) (*domain.Task, error) 			// get specific task by id or return error if not found
 	UpdateTask(taskID string, task *domain.Task) (*domain.Task, error)      // update existing task or return error if not found
 }
 
